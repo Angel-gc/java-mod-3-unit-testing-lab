@@ -3,5 +3,6 @@ public class Main {
         // test methods here
         FizzBuzz f = new FizzBuzz();
         System.out.println(f.fizzBuzzString("fun")); // Fizz
+
     }
 }

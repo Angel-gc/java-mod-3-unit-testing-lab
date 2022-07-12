@@ -1,9 +1,12 @@
+import java.util.Locale;
+
 public class FizzBuzz {
   public String fizzBuzzString(String str) {
-      if (str.startsWith("f"))  return "Fizz";
-      if (str.endsWith("b")) return "Buzz";
+      if (str == null) return null;
+      if (str.toLowerCase().startsWith("f") && str.toLowerCase().endsWith("b")) return "FizzBuzz";
+      if (str.toLowerCase().startsWith("f"))  return "Fizz";
+      if (str.toLowerCase().endsWith("b")) return "Buzz";
 
-      if (str.startsWith("f") && str.endsWith("b")) return "FizzBuzz";
 
       return str;
   }
